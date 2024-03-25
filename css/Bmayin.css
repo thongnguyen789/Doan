@@ -1,0 +1,495 @@
+
+.dropdown-item{
+    background: white;
+}
+.dropdown-item:hover{
+    color: #b7a054;
+}
+
+#searchButton{
+    margin-right: 1rem;
+    padding-right: 1rem;
+}
+
+.backgorund{
+    background-color: cyan;
+}
+.text-center .color-1{
+    color: dodgerblue;
+}
+.text-center p .color-1{
+    color: dodgerblue;
+}
+.product{
+    padding-top: 3rem;
+}
+.image{
+    cursor: pointer;
+}
+.list-sty{
+    list-style: none;
+}
+
+.img-responsive{
+    width: 8rem;
+    border: 1px solid #DDD;
+}
+
+.product .name{
+    border-bottom: 1px solid #eee;
+}
+
+.product .name h3{
+    font-weight: 500;
+    font-size: 20px;
+    margin-top: 10px;
+}
+.caption span{
+    font-weight: 500;
+    color: #666;
+    margin-right: 10px;
+}
+
+.price{
+    padding-top: 15px;
+}
+
+.well{
+    margin-top: 2rem;
+    min-height: 20px;
+    padding: 19px;
+    margin-bottom: 20px;
+    background-color: #f5f5f5;
+    border: 1px solid #e3e3e3;
+    border-radius: 4px;
+    -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.05);
+    box-shadow: inset 0 1px 1px rgba(0,0,0,.05);
+}
+
+label{
+    display: inline-block;
+    margin-bottom: 5px;
+    font-weight: 700;
+}
+
+.product input.form-inline {
+    border-radius: 4px;
+    border: 1px solid #ccc;
+    padding: 4px 6px;
+    width: 60px;
+}
+
+.btn.btn-2 {
+    margin-left: 5px;
+    background: #D9534F;
+    color: #fff;
+    vertical-align: baseline;
+}
+
+/* Cart*/
+.cart-main{
+    position: fixed;
+    top: 50px;
+    width: 360px;
+    /*min-height: 100vh;*/
+    right: 0;
+    z-index: 1000; /* Đảm bảo giỏ hàng luôn hiển thị phía trên các phần khác */
+    background-color: white; 
+    padding: 20px;
+    border: 1px solid #ccc; 
+    border-radius: 5px;
+    box-shadow: -2px 0 4px hsl(0 4% 15% / 10%); 
+    height: 34rem;
+    padding-top: 4rem;
+    transition: 0.3s;
+    overflow-y: auto;
+    /*display: none; /* Ẩn giỏ hàng ban đầu */
+}
+.cart-main.active{
+    right: 0;
+}
+.cart-box{
+    display: grid;
+    grid-template-columns: 35% 50% 18%;
+    align-items: center;
+    gap: 1rem;
+    margin-top: 1rem;;
+}
+.cart-img{
+    width: 100px;
+    height: 100px;
+    object-fit: contain;
+    padding: 10px;
+}
+.detail-box{
+    display: grid;
+    row-gap: 0.5rem;
+}
+.cart-product-title{
+    font-size: 1rem;
+    text-transform: uppercase;
+}
+.cart-price{
+    font-weight: 500;
+}
+.cart-quantity{
+    border: 1px solid black;
+    outline-color: var(--main-color);
+    width: 2.4rem;
+    text-align: center;
+    font-size: 1rem;
+}.cart-remove{
+    font-size: 24px;
+    color: red;
+    cursor: pointer;
+}
+.total{
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 1.5rem;
+    border-top: 2px solid black;
+}
+.total-title{
+    font-size: 1rem;
+    font-weight: 600;
+}
+.total-price{
+    margin-left: 0.5rem;
+}
+.btn-buy{
+    display: flex;
+    margin: 1.5rem auto 0 auto;
+    padding: 12px 20px;
+    border: none;
+    background: red;
+    color: white;
+    font-size: 1rem;
+    font-weight: 500;
+    cursor: pointer;
+}
+.btn-buy:hover{
+    background: #272727;
+}
+#close-cart{
+    position: absolute;
+    top: 1rem;
+    right: 0.8rem;
+    font-size: 2rem;
+    cursor: pointer;
+    color: #272727;
+}
+
+
+/* Ảnh nổi*/
+.imag:hover,
+.imag.active {
+    transform: scale(1.1);
+}
+
+/* Thông tin sản phẩm*/
+.product-desc {
+    margin: 50px 0;
+}
+
+.nav-tabs {
+    border-bottom: 1px solid #ddd;
+}
+
+.actor{
+    position: relative;
+    padding: 10px 15px;
+    background: #272727;
+    border-radius: 0;
+    color: #fff;
+    text-decoration: none;
+}
+.actor:hover{
+    color: white;
+}
+.tab-pane{
+    padding-top: 2rem;
+    padding-left: 3rem;
+}
+
+.tab-content {
+        border-right: 1px solid #ccc;
+        border-bottom: 1px solid #ccc;
+        border-left: 1px solid #ccc;
+        padding: 25px;
+}
+.review-form label span {
+    margin: 10px 0;
+}
+.review-form span{
+   color: #666; 
+}
+.table-caption{
+    display: table-caption;
+}
+
+label span {
+    display: block;
+}
+textarea{
+    width: 65.5rem;
+    height: 10rem;
+}
+.text-align{
+    float: right;
+}
+
+.start{
+    padding-right: 5px;
+}
+
+.ment{
+    font-weight: 500;
+    color: #666;
+}
+
+.mr-1{
+    padding: 3rem;
+}
+.product:after, .product:before{
+    clear: both; 
+    content: '\0020'; 
+    display: block; 
+    visibility: hidden; 
+    width: 0; 
+    height: 0;
+}
+
+/* Hieu ung*/
+#display-image-overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    z-index: 999;
+    justify-content: center;
+    align-items: center;
+}
+
+#display-image {
+    position: relative;
+}
+
+#displayed-image {
+    max-width: 80%;
+    max-height: 80%;
+}
+
+#prev-btn,
+#next-btn,
+#close-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: transparent;
+    border: none;
+    color: white;
+    padding: 10px;
+    cursor: pointer;
+}
+
+#prev-btn {
+    left: 10px;
+}
+
+#next-btn {
+    right: 10px;
+}
+
+#close-btn {
+    top: 10px;
+    right: 10px;
+}
+
+.display{
+    display: none;
+    justify-content: center;
+}
+
+
+
+/* introduce*/
+.bg-pink-50{
+    --tw-bg-opacity: 1;
+    background-color: rgb(255 240 246 / var(--tw-bg-opacity));
+}
+.text-1{
+    background-color: rebeccapurple;
+    text-align: center;
+    font-weight: 500;
+    color: honeydew;
+}
+.text-2{
+    padding: 30px 250px 60px;
+}
+.text-3{
+    text-align: center;
+    font-weight: unset;
+    color: crimson;
+}
+.text-4{
+    padding: 30px 250px 60px;
+}
+.content-2 p span{
+    font-weight: bold;
+}
+
+/* Pagination */
+.margin-left{
+    margin-left: 34.4rem;
+}
+
+/* Contact*/
+.mr-5{
+    padding-bottom: 5rem;
+}
+.heading{
+    border-bottom: 1px solid #ddd;
+    margin-bottom: 30px;
+    margin-top: 5rem;
+}
+.heading h1, .heading h2 {
+    font-size: 30px;
+    padding-bottom: 10px;
+}
+.form1 input{
+    font-family: inherit;
+}
+.form-group {
+    margin-bottom: 25px;
+}
+.form-group input,.form-group textarea {
+    padding: 10px;
+}
+
+.form-group textarea.form-control {
+    height: 180px;
+}
+
+.review-form label textarea {
+    height:130px;
+}
+.review-form label input, .review-form label textarea {
+    width: 100%;
+}
+.review-form label, .review-form label span {
+    display: block;
+}
+.review-form label span {
+    margin: 10px 0;
+}
+
+.btn.btn-1 {
+    background-color: white;
+    color: black;
+    font-size: 18px;
+    padding: 6px 5px;
+    border: 1px solid black;
+}
+.btn.btn.btn-1:hover{
+    color: white;
+    background-color: blue;
+}
+
+/* Account*/
+.acc{
+    margin-right: 1rem;
+}
+.acc a{
+    text-decoration: none;
+    color: #333;
+}
+.acc a:hover{
+    color: #428bca;
+}
+
+.single-page1{
+    text-align: center;
+    margin-bottom: 15rem;
+}
+.form2{
+    border: 1px solid #ced4da;
+    border-radius: 0.375rem;
+}
+
+
+
+/* Footer*/
+.bg-1{
+    background-color: cyan;
+}
+footer {
+    background: #2A2A2A;
+}
+
+footer .wrap-footer {
+    padding: 50px 0;
+}
+footer p{
+    color: #666;
+    margin: 0 0 20px;
+}
+footer .col-footer {
+    border-right: 1px solid #666;
+    padding: 0 30px;
+}
+footer .col-footer:last-child {
+    border: none;
+}
+footer .col-footer .heading {
+    margin: 0 0 20px;
+}
+footer .heading{
+    border-bottom: 1px solid black;
+}
+footer .col-footer .heading h4{
+    color: black;
+    font-size: 23px;
+    font-weight: 500;
+    margin: 0 0 20px;
+}
+footer .col-footer a {
+    color: #666;
+    text-decoration: none;
+}
+footer .col-footer ul {
+    padding-left: 25px;
+}
+footer .col-footer ul li{
+    list-style: circle;
+    color: #666;
+}
+
+footer .footer-4 ul{
+    padding-left: 0px;
+}
+footer .footer-4 ul li{
+    margin-top: 10px; 
+    list-style: none;
+}
+footer .copyright {
+    background: #393939;
+    padding: 20px 0;
+}
+footer .copyright a {
+    color: #fff;
+}
+footer .copyright a:hover {
+    text-decoration: underline;
+}
+footer .copyright ul li {
+    display: inline-block;
+    margin-left: 10px;
+}
+
+.bot{
+    padding: 1rem;
+    background: #666;
+}
